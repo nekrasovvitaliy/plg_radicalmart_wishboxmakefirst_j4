@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="plg_radicalmart_wishboxmakefirst_j5" default="make" basedir=".">
+    <property name="build" value="build" />
+    <property name="prefix" value="plg" />
+    <property name="extension" value="radicalmart_wishboxmakefirst" />
+    <property name="version" value="1.0.0" />
+
+    <target name="make" description="Builds the extension release package for a version.">
+        <delete quiet="yes">
+            <fileset dir=".">
+                <include name="plg_radicalmart_wishboxmakefirst_j5.zip" />
+            </fileset>
+        </delete>
+
+        <zip destfile="plg_radicalmart_wishboxmakefirst_j5.zip">
+            <fileset dir="./">
+                <include name="language/**" />
+                <include name="layouts/**" />
+                <include name="media/**" />
+                <include name="services/**" />
+                <include name="src/**" />
+                <include name="script.php" />
+                <include name="wishboxmakefirst.xml" />
+            </fileset>
+        </zip>
+
+        <delete quiet="yes">
+            <fileset dir=".">
+                <include name="file_jshopping_wishboxlocation/file_jshopping_wishboxlocation.zip" />
+                <include name="lib_wishboxlocation/lib_wishboxlocation.zip" />
+                <include name="plg_jshoppingadmin_wishboxlocation/plg_jshoppingadmin_wishboxlocation.zip" />
+                <include name="plg_jshoppingcheckout_wishboxlocation/plg_jshoppingcheckout_wishboxlocation.zip" />
+                <include name="plg_jshoppingmenu_wishboxlocation/plg_jshoppingmenu_wishboxlocation.zip" />
+            </fileset>
+        </delete>
+    </target>
+</project>

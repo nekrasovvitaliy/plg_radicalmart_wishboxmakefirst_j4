@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.8.1" type="plugin" method="upgrade" group="radicalmart">
+	<name>plg_radicalmart_wishboxmakefirst</name>
+	<creationDate>June 2024</creationDate>
+	<version>1.0.0</version>
+	<author>Vitaliy Nekrasov</author>
+	<authorEmail>nekrasov_vitaliy@list.ru</authorEmail>
+	<copyright>Copyright (C) 2013–2024 Wishbox</copyright>
+	<description>PLG_RADICALMART_WISHBOXMAKEFIRST_XML_DESCRIPTION</description>
+	<namespace path="src">Joomla\Plugin\Radicalmart\Wishboxmakefirst</namespace>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<folder>language</folder>
+		<folder>layouts</folder>
+		<folder plugin="wishboxmakefirst">services</folder>
+		<folder>src</folder>
+	</files>
+	<media destination="plg_radicalmart_wishboxmakefirst" folder="media">
+		<folder>images</folder>
+	</media>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
