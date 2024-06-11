@@ -51,7 +51,6 @@ final class Wishboxmakefirst extends CMSPlugin implements SubscriberInterface
 			'onRadicalMartGetAdministratorCommands'     => 'onRadicalMartGetAdministratorCommands',
 			'onRadicalMartPrepareAdministratorToolbar'  => 'onRadicalMartPrepareAdministratorToolbar',
 			'onRadicalMartPrepareAdministratorListItem' => 'onRadicalMartPrepareAdministratorListItem',
-			'onRadicalMartPrepareProductPrice'          => 'onRadicalMartPrepareProductPrice'
 		];
 	}
 
